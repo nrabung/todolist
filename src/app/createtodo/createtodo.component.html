@@ -1,0 +1,22 @@
+<div class="card card-block">
+  <h4 class="card-title">Create ToDo - Item</h4>
+  <hr>
+  <div class="from-group">
+    <input type="text" class="form-control" placeholder="Enter you ToDo - Item here" #todoitem>
+  </div>
+  <div class="from-group">
+      <input type="text" class="form-control" placeholder="Enter you ToDo - Description here" #desc>
+    </div>
+    <button type="button" class="btn btn-primary" (click)="createTodoComponent(todoitem.value, desc.value); 
+      todoitem.value=''; desc.value=''">Create ToDo - Item
+    </button>
+    <div [hidden]="messagevalue">
+      <hr>
+      <div class="alert alert-danger" role="alert">
+        {{ message }}
+      </div>
+    </div>
+</div>
+
+
+<!-- *ngIf="!todoitem.value" disabled -->

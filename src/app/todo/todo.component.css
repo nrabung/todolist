@@ -1,0 +1,27 @@
+.from-group {
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.card-block {
+    margin-top: 25px;
+    margin-left: 25px;
+    /* max-width: 700px; */
+}
+
+.btn {
+    color: #fff !important;
+}
+
+.btn-green {
+    background-color:#a1d33c;
+}
+
+.btn-green:hover {
+    background-color: #91bf36;
+
+}
+
+.right {
+    float: right;
+    /* margin-top: 5px; */
+}

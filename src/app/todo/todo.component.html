@@ -1,0 +1,12 @@
+<div class="card card-block">
+    <div class="row">
+        <div class="col-lg-8"><h4 class="card-text title">{{ data.itemtodo }}</h4></div>
+        <div class="col-md-4"><a (click)="editItem()" a class="btn btn-sm btn-warning right"><span class="fas fa-edit"></span> Edit</a></div>
+    </div>
+    <hr>
+    <p class="card-text"
+        [hidden]="data.hide"> {{ data.desc }}
+    </p>
+    <a (click)="data.toggle()" class="btn btn-green">Show Descripton</a>
+    <a (click)="deleteItem()" class="btn btn-danger">Delete Item</a>
+</div>
