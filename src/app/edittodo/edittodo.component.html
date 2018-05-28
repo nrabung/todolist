@@ -3,13 +3,13 @@
   <hr>
   <div class="form-group">
     <h5>ToDo Item:</h5>
-    <input *ngIf="data" type="text" class="form-control" [(ngModel)]="data.itemtodo" >
+    <input *ngIf="datas" type="text" class="form-control" [(ngModel)]="datas.itemtodo" >
   </div>
   <div class="form-group">
     <h5>Description</h5>
-    <input *ngIf="data" type="text" class="form-control" [(ngModel)]="data.desc">
+    <input *ngIf="datas" type="text" class="form-control" [(ngModel)]="datas.desc">
   </div>
-  <button (click)="saveItem(data.itemtodo, data.desc)" class="btn btn-primary">Save</button>
+  <button (click)="saveItem(datas.itemtodo, datas.desc)" class="btn btn-primary">Save</button>
 </div>
 
 <!-- 
