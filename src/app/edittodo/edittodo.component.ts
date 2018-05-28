@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./edittodo.component.css']
 })
 export class EdittodoComponent implements OnInit {
-  @Input() data: TodomodelModule;
+  @Input() datas: TodomodelModule;
   @Output() itemSaved = new EventEmitter<TodomodelModule>();
   // @Input() hidden = true;
   constructor() { }

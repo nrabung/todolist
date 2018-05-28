@@ -1,20 +1,21 @@
-<!-- 
-<ul>
-  <li *ngFor="let j of jokes">
-    <app-todo [data]="j"></app-todo>
-    {{ j.punchline }}
-    </li>
-</ul> -->
+
 
 <div class="container">
-  <div class="row">
+  <div class="row justify-content-md-center" >
     <div class="col-md-6">
       <app-createtodo (todoCreated)="addItem($event)"></app-createtodo>
-      <app-edittodo [data]="edit" [hidden]="!edit" (itemSaved)="saveItem($event)"></app-edittodo>
+      <app-edittodo [datas]="edit" [hidden]="!edit" (itemSaved)="saveItem($event)"></app-edittodo>
+      <div class="alert alert-danger" role="alert">
+        {{ todayDate }}
+      </div>
     </div>
-    <div class="col-md-6"> 
+    <div class="col-md-6" *ngIf = "todos.length > 0"> 
       <app-todo *ngFor = "let todo of todos" [data]="todo"
       (itemDeleted)="deleteItem($event)" (itemEdited)="editItem($event)"></app-todo>
     </div>
   </div>
 </div>
+
+
+ <!-- ()links nach rechts DAten übergeben ($event)
+      []rechts nach links daten reinschreiben/zuweisen ##Yolo##ß        -->

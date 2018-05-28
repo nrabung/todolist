@@ -17,7 +17,7 @@ import { EdittodoComponent } from './edittodo/edittodo.component';
     TodoComponent,
     TodolistComponent,
     CreatetodoComponent,
-    EdittodoComponent
+    EdittodoComponent,
   ],
   imports: [
     BrowserModule,
